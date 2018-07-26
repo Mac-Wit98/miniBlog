@@ -21,8 +21,12 @@
         <div class="col-xs-12">
             <form action="/posts/add"  method="post">
                 <div class="form-group">
-                    <label for="postName">Tytuł</label>
+                    <label for="postName">Podaj tytuł</label>
                     <input type="text" class="form-control" id="postName" name="title">
+                </div>
+                <div class="form-group">
+                    <label for="postName">Podaj tagi po przecinku</label>
+                    <input type="text" class="form-control" id="tag" name="tagList">
                 </div>
                 <div class="form-group">
                     <textarea name="content" class="form-control" rows="5" placeholder="Dodaj treść posta"></textarea>
