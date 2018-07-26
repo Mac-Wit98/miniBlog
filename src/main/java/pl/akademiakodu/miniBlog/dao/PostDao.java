@@ -5,4 +5,5 @@ import pl.akademiakodu.miniBlog.model.Post;
 
 public interface PostDao extends CrudRepository<Post, Integer> {
 
+
 }

@@ -34,6 +34,9 @@
                     <ul class="list-inline list-unstyled">
                         <li><span><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours </span></li>
                         <li>|</li>
+                        <span><i class="glyphicon glyphicon-comment"></i>
+                            <span th:text="${post.comments.size()}"></span>comments
+                        </span>
                         <td><a th:href="@{/posts/{id}(id=${post.id})}">Comments</a></td>
                         <li>|</li>
                         <li>
