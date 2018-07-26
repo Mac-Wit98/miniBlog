@@ -61,5 +61,13 @@ public class PostController {
         redirectAttributes.addFlashAttribute("message","Pomyślnie dodano komentarz");
         return "redirect:/posts/"+comment.getPost().getId();
     }
+    @GetMapping("/")
+    public String hello(){
+        return "hello";
+    }
+    @GetMapping("/login")
+    public String login(){
+        return "login";
+    }
 
 }
