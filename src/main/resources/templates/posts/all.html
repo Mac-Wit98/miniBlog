@@ -34,7 +34,7 @@
                     <ul class="list-inline list-unstyled">
                         <li><span><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours </span></li>
                         <li>|</li>
-                        <span><i class="glyphicon glyphicon-comment"></i> 2 comments</span>
+                        <td><a th:href="@{/posts/{id}(id=${post.id})}">Comments</a></td>
                         <li>|</li>
                         <li>
                             <span class="glyphicon glyphicon-star"></span>
@@ -49,6 +49,9 @@
                             <span><i class="fa fa-facebook-square"></i></span>
                             <span><i class="fa fa-twitter-square"></i></span>
                             <span><i class="fa fa-google-plus-square"></i></span>
+                        </li>
+                        <li>
+                            <td><a th:href="@{/posts/{id}(id=${post.id})}">Edit</a></td>
                         </li>
                     </ul>
                 </div>
